@@ -13,7 +13,7 @@ export const defaultTheme = {
   formElementBackground: neutral[100],
   textOnFormElementBackground: neutral[600],
   primaryFont,
-  status: {
+  status: { 
     warningColor: yellow[100],
     warningColorHover: yellow[200],
     warningColorActive: yellow[300],
