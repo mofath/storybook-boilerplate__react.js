@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@storybook/addon-a11y": "^5.3.14",
-    "@storybook/addon-backgrounds": "^5.3.14",
+    "@storybook/addon-a11y": "^6.3.0",
+    "@storybook/addon-backgrounds": "^6.3.0",
     "@storybook/addon-contexts": "^5.3.14",
-    "@storybook/addon-docs": "^5.3.14",
-    "@storybook/addon-knobs": "^5.3.14",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0",
-    "react-spring": "^8.0.27",
+    "@storybook/addon-docs": "^6.3.0",
+    "@storybook/addon-knobs": "^6.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-spring": "^9.2.3",
     "styled-components": "^5.3.0"
   },
   "scripts": {
@@ -38,10 +38,10 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.3.14",
-    "@storybook/addon-links": "^5.3.14",
-    "@storybook/addons": "^5.3.14",
-    "@storybook/preset-create-react-app": "^2.0.0",
-    "@storybook/react": "^5.3.14"
+    "@storybook/addon-actions": "^6.3.0",
+    "@storybook/addon-links": "^6.3.0",
+    "@storybook/addons": "^6.3.0",
+    "@storybook/preset-create-react-app": "^3.1.7",
+    "@storybook/react": "^6.3.0"
   }
 }

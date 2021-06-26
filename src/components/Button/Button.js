@@ -21,9 +21,12 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   );
 };
 
-export const PrimaryButton = () => <Button primary={true} size='large' label="Click" />
+export const PrimaryButton = () => <Button primary={true} size='large' label="Click" />;
 
-export const SecondaryButton = () => <Button label="Click" size='medium' />
+export const SecondaryButton = () => <Button label="Click" size='medium' />;
+
+export const TertiaryButton = () => <Button label="Click" size='small' />
+
 
 Button.propTypes = {
   primary: PropTypes.bool,
