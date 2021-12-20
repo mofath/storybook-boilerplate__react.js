@@ -9,33 +9,27 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 import { contexts } from './contexts';
+import { ThemeProvider } from "styled-components";
+import GlobalStyles from './globalStyles';
+import themeDefault from './themeDefault';
+
+const GlobalWrapper = (storyFn) => (
+    <ThemeProvider theme={themeDefault}>
+        <h1>Welcome to Storybook</h1>
+      <GlobalStyles />
+      {storyFn()}
+    </ThemeProvider>
+  );
 
 addDecorator(withContexts(contexts));
 addDecorator(withKnobs);
 addDecorator(withA11y);
 
 addParameters({
-    docs: {
-        container: DocsContainer,
-        page: DocsPage,
-    },
+  docs: {
+    container: DocsContainer,
+    page: DocsPage,
+  },
 });
 
-
-// import React from 'react';
-// import { addDecorator, configure } from '@storybook/react';
-// import { ThemeProvider } from 'styled-components';
-// import GlobalStyles from '../components/particles/globalStyles';
-// import themeDefault from '../components/particles/themeDefault';
-
-// // automatically import all files ending in *.stories.js
-// configure(require.context('../components', true, /\.stories\.js$/), module);
-
-// const GlobalWrapper = (storyFn) => (
-//     <ThemeProvider theme={themeDefault}>
-//         <GlobalStyles />
-//         {storyFn()}
-//     </ThemeProvider>
-// );
-
-// addDecorator(GlobalWrapper);
+addDecorator(GlobalWrapper);
