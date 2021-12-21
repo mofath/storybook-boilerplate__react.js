@@ -1,0 +1,17 @@
+{
+  "innerText": {
+    "label": "Button text",
+    "default": "Button text",
+    "group": "text"
+  },
+  "icon": {
+    "label": "icon",
+    "options": {
+      "cart": "cart",
+      "plus": "plus",
+      "user": "user"
+    },
+    "default": "bag",
+    "group": "images"
+  }
+}
