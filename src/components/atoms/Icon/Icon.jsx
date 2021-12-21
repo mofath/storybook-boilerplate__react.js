@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './icon.scss';
 
-import IconPlus from '../../../assets/plus.svg';
-import IconCart from '../../../assets/cart.svg';
-import IconUser from '../../../assets/user.svg';
+import { ReactComponent as IconPlus } from '../../../assets/plus.svg';
+import { ReactComponent as IconCart } from '../../../assets/cart.svg';
+import { ReactComponent as IconUser } from '../../../assets/user.svg';
 
 const icons = {
   cart: IconCart,
@@ -17,14 +18,14 @@ const Icon = ({ name }) => {
   if (IconElement === undefined) return null;
 
   return (
-    <span>
+    <span className='icon'>
       <IconElement />
     </span>
   );
 };
 
 Icon.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
 };
 
 export default Icon;
