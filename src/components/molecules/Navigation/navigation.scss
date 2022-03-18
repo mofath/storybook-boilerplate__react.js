@@ -1,0 +1,21 @@
+
+.navigation {
+  display: flex;
+  padding: 16px;
+
+  &--vertical {
+    flex-direction: column;
+
+    a + a {
+      margin-top: 24px;
+    }
+  }
+
+  &--horizontal {
+    flex-direction: row;
+
+    a + a {
+      margin-left: 24px;
+    }
+  }
+}
